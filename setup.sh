@@ -5,3 +5,4 @@ cmsenv
 cd ../..
 export MYROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export PYTHIA8DATA=$MYROOT/MG5_aMC_v2_6_5/HEPTools/pythia8/share/Pythia8/xmldoc/
+export CMSMCMODELS=/afs/cern.ch/cms/generators/www
