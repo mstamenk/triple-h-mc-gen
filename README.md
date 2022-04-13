@@ -59,11 +59,11 @@ In order to generate events, use the cards stored in `production-cards`.
 ```
 cd MG5_aMC_v2_6_5
 ./bin/mg5_aMC
-!cat production-cards/GF_HHH_SM_loop_sm_c3d4_proc_card.dat
+!cat ../production-cards/GF_HHH_SM_loop_sm_c3d4_proc_card.dat
 # copy the information there in the shell
 launch
 # provide path to run_card
-production-cards/GF_HHH_SM_loop_sm_c3d4_run_card.dat
+../production-cards/GF_HHH_SM_loop_sm_c3d4_run_card.dat
 ```
 
 
