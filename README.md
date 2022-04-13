@@ -66,4 +66,22 @@ launch
 ../production-cards/GF_HHH_SM_loop_sm_c3d4_run_card.dat
 ```
 
+# Cheatsheet for Madgraph - debugged info
+
+There's an issue for the parallelisation of Pythia8 within the madgraph implementation, in order to solve it, one needs to specify the path of the Pythia8 XML (already done in the setup.sh script). 
+
+```
+export PYTHIA8DATA=$MYROOT/MG5_aMC_v2_6_5/HEPTools/pythia8/share/Pythia8/xmldoc/
+```
+
+Higgs bosons are decayed using MadSpin. One needs to specify it in the MadSpin card after the launch. 
+
+```
+set spinmode none # near the set lines
+
+decay h > all all # near the decay lines
+```
+
+
+
 
