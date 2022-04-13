@@ -82,6 +82,10 @@ set spinmode none # near the set lines
 decay h > all all # near the decay lines
 ```
 
+It is not yet entirely clear to me how to automate the MadSpin modification
 
+To display diagrams, use:
 
-
+```
+display diagrams # in mg5_aMC shell
+```
