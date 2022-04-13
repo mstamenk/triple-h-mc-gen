@@ -35,3 +35,24 @@ rm MG5_aMC_v2.6.5.tar.gz
 cd MG5_aMC_v2_6_5/
 ./bin/mg5_aMC
 ```
+
+The prompt will ask you if you want to update, put no (n). 
+
+Next step is to install the various libraries necessaries for event generation and transformation into root file. 
+
+```
+# in the mg5_aMC 
+install pythia8
+install ExRootAnalysis
+# install Delphes # not working yet because of some ROOT version issue
+```
+
+Next, one needs to setup the models in order to be able to run triple H production (ggF and VBF). For this, the models are already provided in `custom-models`, copy them in the right location.
+
+```
+cp -r custom-models/loop_sm_* MG5_aMC_v2_6_5/models/
+```
+
+
+
+
